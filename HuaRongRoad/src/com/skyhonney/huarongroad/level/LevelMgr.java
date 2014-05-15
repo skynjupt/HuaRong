@@ -1,26 +1,65 @@
 package com.skyhonney.huarongroad.level;
 
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-import android.content.Context;
+import org.xmlpull.v1.XmlPullParser;
+
+import android.content.res.AssetManager;
+import android.util.Xml;
+import android.widget.AbsoluteLayout;
+
+import com.skyhonney.huarongroad.HuaRongRoadActivity;
+import com.skyhonney.huarongroad.view.PeopleButton;
 
 public class LevelMgr {
-	private static final String HEIGHT_TAG = "height";
-	private static final String WIDTH_TAG = "width";
-	private static final String X_TAG = "x";
-	private static final String Y_TAG = "y";
 	private static final String PEPOLEDATA_TAG = "PepoleData";
 	private static final String PEPOLE_TYPE_TAG = "pepoleType";
+	private static final String WIDTH_TAG = "width";
+	private static final String HEIGHT_TAG = "height";
+	private static final String X_TAG = "x";
+	private static final String Y_TAG = "y";
 
-	public static void createPepoleComps(List<PepoleData> list, Context c) {
+	@SuppressWarnings("deprecation")
+	public static void createPepoleComps(List<PepoleData> list,
+			HuaRongRoadActivity c) {
+
+		if ((list == null) || (c == null)) {
+			return;
+		}
+
+		int offsetH = c.getOffsetH();
+		int offsetTop = c.getOffsetTop();
+		int bgBtnWidth = c.getBgBtnWidth();
+
+		Iterator<PepoleData> iterator = list.iterator();
+		while (iterator.hasNext()) {
+			PepoleData pepoleData = iterator.next();
+
+			int pepoleType = PepoleType.str2Int(pepoleData.getPepoleType());
+			int width = bgBtnWidth * pepoleData.getWidth();
+			int height = bgBtnWidth * pepoleData.getHeight();
+			int x = offsetTop + bgBtnWidth * pepoleData.getX();
+			int y = offsetH + bgBtnWidth * pepoleData.getY();
+
+			PeopleButton peopleButton = new PeopleButton(c, pepoleType);
+			peopleButton.setOnTouchListener(c.createPepoleBtnTouchListener());
+			peopleButton.setLayoutParams(new AbsoluteLayout.LayoutParams(width,
+					height, x, y));
+			c.getMainLayout().addView(peopleButton);
+			c.getPeopleBtnMap().put(pepoleType, peopleButton);
+		}
 
 	}
 
-	public static void genLevel(int level, Context c) {
+	public static void genLevel(int level, HuaRongRoadActivity c) {
 		createPepoleComps(getLevel(level, c), c);
 	}
 
-	public static List<PepoleData> getLevel(int level, Context context) {
+	public static List<PepoleData> getLevel(int level,
+			HuaRongRoadActivity context) {
 
 		List list = null;
 
@@ -289,14 +328,59 @@ public class LevelMgr {
 		case LevelType.feng_hui_lu_zhuan:
 			list = parseXML("level/feng_hui_lu_zhuan.xml", context);
 			break;
-
 		}
 
 		return list;
 	}
 
-	public static List<PepoleData> parseXML(String path, Context c) {
-		return null;
+	public static List<PepoleData> parseXML(String path, HuaRongRoadActivity c) {
+
+		List<PepoleData> list = null;
+
+		try {
+			AssetManager assetManager = c.getAssets();
+			PepoleData pepoleData = null;
+			InputStream is = null;
+			is = assetManager.open(path);
+			XmlPullParser parser = Xml.newPullParser();
+			parser.setInput(is, "UTF-8");
+			int eventType = parser.getEventType();
+			while (eventType != XmlPullParser.END_DOCUMENT) {
+				switch (eventType) {
+				case XmlPullParser.START_DOCUMENT:
+					list = new ArrayList<PepoleData>();
+					break;
+				case XmlPullParser.START_TAG:
+					String name = parser.getName();
+					if (PEPOLEDATA_TAG.equalsIgnoreCase(name)) {
+						pepoleData = new PepoleData();
+						pepoleData.setPepoleType(parser.getAttributeValue(null,
+								PEPOLE_TYPE_TAG));
+						pepoleData.setWidth(Integer.parseInt(parser
+								.getAttributeValue(null, WIDTH_TAG)));
+						pepoleData.setHeight(Integer.parseInt(parser
+								.getAttributeValue(null, HEIGHT_TAG)));
+						pepoleData.setX(Integer.parseInt(parser
+								.getAttributeValue(null, X_TAG)));
+						pepoleData.setY(Integer.parseInt(parser
+								.getAttributeValue(null, Y_TAG)));
+					}
+					break;
+				case XmlPullParser.END_TAG:
+					if(pepoleData != null) {
+						list.add(pepoleData);
+						pepoleData = null;
+					}
+					break;
+				}
+				eventType = parser.next();
+			}
+
+		} catch (Exception e) {
+			return null;
+		}
+
+		return list;
 	}
 
 }
