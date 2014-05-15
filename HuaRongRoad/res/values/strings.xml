@@ -4,5 +4,175 @@
     <string name="app_name">HuaRongRoad</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="new_game">新游戏</string>
+    <string name="about">关于</string>
+    <string name="about_huarong">关于华容道</string>
+    <string name="help">帮助</string>
+    <string name="select_level">选择游戏关卡</string>
+    <string name="congratulations">恭喜您</string>
+    <string name="congratulations_success">恭喜您，通过此关！</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="finished">完成</string>
+    <string name="unfinished">未完成</string>
+    <string name="new_record">新纪录！</string>
+    <string name="failed">失败</string>
+    <string name="step">步</string>
+    <string name="step_colon">步数：</string>
+    <string name="exit">退出</string>
+    <string name="try_again">重试</string>
+    <string name="play_game">开始游戏</string>
+    <string name="restart_game">重新开始</string>
+    <string name="game_demonstration">通关演示</string>
+    <string name="get_integral">免费赚取积分</string>
+    <string name="get_five_integral">获得5个积分</string>
+    <string name="integral">积分</string>
+    <string name="total_integral">总积分</string>
+    <string name="not_activation">未激活</string>
+    <string name="activation">激活</string>
+    <string name="demonstration">演示</string>
+    <string name="demonstration_start">演示开始</string>
+    <string name="demonstration_end">演示结束</string>
+    <string name="game_continue">继续游戏</string>
+    <string name="are_you_sure_exit">您确认要退出吗？</string>
+    <string name="not_enough_integral">积分不足！</string>
+    <string name="do_activate_demo">是否激活本局的通关演示功能？</string>
+    <string name="activate_demo_condition">激活本局通关演示功能需要20积分，您的当前积分是：</string>
+    <string name="error_network">连接网络失败，请确认您的手机是否已经正常联网。</string>
+    <string name="tao_zhi_yao_yao">逃之夭夭</string>
+    <string name="qi_bu_cheng_shi">七步成诗</string>
+    <string name="san_jun_lian_fang">三军联防</string>
+    <string name="yun_zhe_wu_zhang">云遮雾障</string>
+    <string name="wu_jiang_bi_gong">五将逼宫</string>
+    <string name="bing_lin_cao_ying">兵临曹营</string>
+    <string name="bing_jiang_lian_fang">兵将联防</string>
+    <string name="qian_hu_hou_yong">前呼后拥</string>
+    <string name="si_jiang_lian_guan">四将连关</string>
+    <string name="si_lu_jin_bing">四路进兵</string>
+    <string name="si_mian_chu_ge">四面楚歌</string>
+    <string name="jia_dao_cang_bing">夹道藏兵</string>
+    <string name="shou_kou_ru_ping">守口如瓶2</string>
+    <string name="jiang_shou_jiao_lou">将守角楼</string>
+    <string name="jiang_dang_hou_lu">将挡后路</string>
+    <string name="ceng_ceng_she_fang">层层设防1</string>
+    <string name="tun_bing_dong_lu">屯兵东路</string>
+    <string name="qiao_guo_wu_guan">巧过五关</string>
+    <string name="cha_chi_nan_fei">插翅难飞</string>
+    <string name="heng_dao_li_ma">横刀立马1</string>
+    <string name="bi_yi_heng_kong">比翼横空</string>
+    <string name="shui_xie_bu_tong">水泄不通</string>
+    <string name="diao_bing_qian_jiang">调兵遣将</string>
+    <string name="chong_chong_bao_wei">重重包围</string>
+    <string name="du_pi_xi_jing">独辟蹊径</string>
+    <string name="yang_96">阳96</string>
+    <string name="yin_96">阴96</string>
+    <string name="xing_bai_li_zhe">行百里者半九十</string>
+    <string name="huan_li_wei_dui">换离为兑</string>
+    <string name="yu_qiao_yu_zhuo">寓巧于拙</string>
+    <string name="wu_heng_zhi_ju">无橫之局</string>
+    <string name="yu_ba_bu_neng">欲罢不能</string>
+    <string name="feng_hui_lu_zhuan">峰回路转</string>
+    <string name="xiao_bin_tan_lu">小兵探路</string>
+    <string name="heng_xing_zhi_jiang">横行之将</string>
+    <string name="wu_shu_zhi_ju">无竖之局</string>
+    <string name="shu_tu_tong_gui">殊途同归</string>
+    <string name="yi_fu_dang_guan">一夫当关</string>
+    <string name="yi_ru_qi_tu">易入歧途</string>
+    <string name="jin_zai_zhi_chi_1">近在咫尺1</string>
+    <string name="jin_zai_zhi_chi_2">近在咫尺2</string>
+    <string name="sheng_ji_ang_ran">生机盎然</string>
+    <string name="ceng_ceng_she_fang_2">层层设防2</string>
+    <string name="xiao_yan_chu_chao">小燕出巢</string>
+    <string name="feng_jing_ma_liang_1">冯京马凉1</string>
+    <string name="feng_jing_ma_liang_2">冯京马凉2</string>
+    <string name="ru_di_wu_men">入地无门</string>
+    <string name="heng_dao_li_ma_2">横刀立马2</string>
+    <string name="heng_dao_li_ma_3">横刀立马3</string>
+    <string name="shou_kou_ru_ping_1">守口如瓶1</string>
+    <string name="chang_tu_ba_she">长途跋涉</string>
+    <string name="si_bing_tong_xin">四兵同心</string>
+    <string name="bing_dang_jiang_zu">兵挡将阻</string>
+    <string name="an_du_chen_cang">暗渡陈仓</string>
+    <string name="yu_you_chun_shui">鱼游春水</string>
+    <string name="yi_di_tong_xin">异地同心</string>
+    <string name="jiang_yong_cao_yin">将拥曹营</string>
+    <string name="qi_tou_bing_jin">齐头并进</string>
+    <string name="tao_hua_yuan_zhong">桃花园中</string>
+    <string name="zuo_bing_you_jiang">左兵右将</string>
+    <string name="xi_ri_ba_zhu">昔日霸主</string>
+    <string name="dan_shen_xiao_bing">单身小兵</string>
+    <string name="xu_wu_piao_miao">虚无缥缈</string>
+    <string name="shui_hu_ju_yi">水浒聚义</string>
+    <string name="xiang_kan_liang_bu_yan">相看两不厌</string>
+    <string name="bei_shui_lie_zhen">背水列阵</string>
+    <string name="jing_di_zhi_wa">井底之蛙</string>
+    <string name="fang_jing_di_zhi_wa">仿井底之蛙</string>
+    <string name="liu_jinag_shou_guan">六将守关</string>
+    <string name="bai_bu_qi_xing">百步歧形</string>
+    <string name="xin_jin_zai_zhi_chi">新近在咫尺</string>
+    <string name="pi_ma_si_feng">匹马嘶风</string>
+    <string name="yi_lu_jin_jun">一路进军</string>
+    <string name="wei_er_bu_jian">围而不奸</string>
+    <string name="qian_jia_hou_gong">前夹后攻</string>
+    <string name="quan_tou">拳头</string>
+    <string name="fa_ma">砝码</string>
+    <string name="shen_xian_ling_yu">身陷囹圄</string>
+    <string name="niu_qi_chong_tian">牛气冲天</string>
+    <string name="shu_tu_tong_gui_2">殊途同归2</string>
+    <string name="jie_jie_gao_shen">节节高升</string>
+    <string name="heng_shu_jie_jiang">横竖皆将</string>
+    <string name="lie_dui_ying_jie">列队迎接</string>
+    <string name="da_du_qiao_heng">大渡桥横</string>
+    <string name="si_mian_ba_fang">四面八方</string>
+    <string name="san_yang_kai_tai">三羊开泰</string>
+    <string name="lun_hui">轮回</string>
+    <string name="web_wang_ba_gua">文王八卦</string>
+    <string name="xing_luo_qi_bu">星罗棋布</string>
+    <string name="poem_title">华容小径</string>
+    <string name="poem_item1">兵不在多，四个则行；</string>
+    <string name="poem_item2">将不在广，五虎则灵；</string>
+    <string name="poem_item3">斯是游戏，唯吾闲情；</string>
+    <string name="poem_item4">曹操快跑，小兵勤追；</string>
+    <string name="poem_item5">过关斩将，聚会四星；</string>
+    <string name="poem_item6">华容小道，关羽动心；</string>
+    <string name="poem_item7">私放曹操，报答恩情！</string>
+
+    <string name="help_context">"
+游戏简介：
+
+　　华容道游戏取自著名的三国故事，曹操在赤壁大战中被刘备和孙权的“苦肉计”、“火烧连营”打败， 被迫退逃到华容道，又遇上诸葛亮的伏兵， 关羽为了报答曹操对他的恩情， 明逼实让， 终于帮助曹操逃出了华容道。 游戏就是依照“曹瞒兵败走华容， 正与关公狭路逢。 只为当初恩义重， 放开金锁走蛟龙”这一故事情节。 
+
+
+玩法说明：
+
+　　通过移动各个棋子， 帮助曹操从初始位置移到棋盘最下方中部， 从出口逃走。 不允许跨越棋子， 还要设法用最少的步数把曹操移到出口。 
+
+　　在这个游戏中有10个木板分别代表10种人物角色， 他们分别是丞相曹操、 五虎上将关羽、 张飞、 赵云、 马超、 黄忠和4个士兵。 
+
+
+游戏优点：
+
+　　华容道是个数学游戏， 可以锻炼人的思维， 让人的思维更活跃。 
+
+
+游戏要点：
+
+　　《数学漫谈》中对这个游戏作了详细的分析， 总结出8条规则。 这8条可以归纳为以下4点： 
+
+　　1. 四个小兵必须两两在一起， 不要分开； 
+
+　　2. 曹操， 关羽， 大将移动时前面应有两个小兵开路； 
+
+　　3. 曹操移动时后面还应有两个小兵追赶； 
+
+　　4. 以下三种状况，其中各块都可局部（不妨碍其他地方）任意移动。 
+
+"</string>
+    <string name="help_context2">"历史故事：
+ 　　“诸葛亮智算华容，关云长义释曹操”，是世人皆知的一个故事，《三国演义》中的重点篇章。
+ 　　小说写赤壁战前，诸葛亮算定曹操必败走华容，且夜观天象，曹操不当身亡，考虑到曹操与关羽有恩，于是派关云长把守华容道，留个人情与关羽做。 曹操果然由乌林向华容道败退，并在途中三次大笑诸葛亮、周瑜智谋不足，未在险要处暗设伏兵。 然而，一笑笑出赵子龙，多亏徐晃、张郃二人双敌赵云，才使曹操得以逃脱； 二笑笑出张翼德，又是张辽、徐晃二将抵挡张飞，使曹操再次脱险； 三笑非同小可，笑出了关云长，且又在有一夫当关之险的华容狭路上，加之曹军几经打击，此时已无力再战，无奈，曹操只得亲自哀求关羽放行，关羽念旧日恩情，义释曹操，使曹操得以回到江陵。"
+ </string>
+    
+    
 
 </resources>
