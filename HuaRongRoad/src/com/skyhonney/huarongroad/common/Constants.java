@@ -7,8 +7,8 @@ public class Constants {
 	public static final int DEMONSTRATION = 1;
 	public static final int NOMORL = 0;
 	public static final int RESTART = 2;
-	public static final int SCREEN_W = 0;
-	public static final int SCREEN_H = 0;
+	public static int SCREEN_W = 0;
+	public static int SCREEN_H = 0;
 	
 	public static final String DATABASE = "HuaRongDatabase";
 	public static final String DATA_FILE = "dataFile.properties";

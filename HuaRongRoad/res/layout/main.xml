@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_context"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_t"
+    android:configChanges="keyboardHidden|orientation"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/brightnessLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10.0dip"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/brightnessSeekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:maxHeight="8.0dip"
+            android:minHeight="8.0dip"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/sun"
+            android:thumbOffset="0.0dip" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/brightnessLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10.0dip"
+        android:stretchColumns="0,1,2" >
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:baselineAligned="true" >
+
+            <ImageButton
+                android:id="@+id/newGameBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="#00000000"
+                android:scaleType="fitXY"
+                android:src="@drawable/newgame_button_selector" />
+
+            <ImageButton
+                android:id="@+id/aboutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="#00000000"
+                android:src="@drawable/about_button_selector" />
+
+            <ImageButton
+                android:id="@+id/helpBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="#00000000"
+                android:src="@drawable/help_button_selector" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
